@@ -2,7 +2,7 @@
 <template>
 	<ul>
     <li><RouterLink to="/">Home</RouterLink></li>
-    <li><RouterLink to="/TodoListView">Todo List</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Todos' }">Todo List</RouterLink></li>
     </ul>
 </template>
 
@@ -12,7 +12,6 @@ ul {
   margin: 0;
   padding: 0;
   z-index: 2000;
-  /* overflow: hidden; */
   background-color: #333;
 }
 
